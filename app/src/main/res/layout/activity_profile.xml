@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/profile_toolbar_mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.NoActionBar"
+                app:elevation="0dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/toolbar_clr"
+                    android:theme="@style/AppTheme.NoActionBar">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton_profile_back"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/ic_chevron_left_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/profileText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/helveticalight"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/profile_title_text"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <ru.nikartm.support.ImageBadgeView
+                            android:id="@+id/imageView_profile_cart"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="20dp"
+                            app:ibv_badgeValue="0"
+                            app:ibv_badgeTextSize="9sp"
+                            app:ibv_fixedBadgeRadius="10dp"
+                            app:ibv_badgeTextStyle="bold"
+                            app:ibv_badgeTextColor="#ffffff"
+                            app:ibv_badgeColor="@color/red"
+                            app:ibv_badgeLimitValue="true"
+                            android:src="@drawable/ic_action_cart" />
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_toolbar_mainLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_photo_img"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/group_5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/group_5" />
+
+                <TextView
+                    android:id="@+id/profile_username_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_photo_img"
+                    tools:text="Adithya T Raj" />
+
+                <TextView
+                    android:id="@+id/profile_user_email_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_username_txt"
+                    tools:text="adi001@test.mail.com" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_user_email_txt">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/margin_16"
+                        app:cardElevation="@dimen/margin_4"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/profile_go_to_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="@dimen/margin_16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/order" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="@dimen/margin_16"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_green"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/my_orders_title_text" />
+
+                            <FrameLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/text_green">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+
+                                    android:src="@drawable/right_arrow" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/profile_go_to_zwallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="@dimen/margin_16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/wallet_1" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="@dimen/margin_16"
+
+                                android:layout_weight="1"
+                                android:textColor="@color/text_green"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/zwallet" />
+
+                            <FrameLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/text_green">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/right_arrow" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/profile_go_to_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="@dimen/margin_16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/home_address" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="@dimen/margin_16"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_green"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/addresses_title_text" />
+
+                            <FrameLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/text_green">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/right_arrow" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/profile_change_language"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="@dimen/margin_16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_language"
+                                app:tint="@color/text_green" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="@dimen/margin_16"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_green"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/change_language_title_text" />
+
+                            <FrameLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/text_green">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/right_arrow" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/profile_go_to_change_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginStart="@dimen/margin_16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/secure" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginEnd="@dimen/margin_16"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_green"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/change_password_title_text" />
+
+                            <FrameLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/text_green">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/right_arrow" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="144dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/margin_16"
+                        android:layout_marginVertical="32dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/profile_sign_out_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_marginStart="@dimen/margin_16"
+                                android:layout_gravity="center"
+                                android:src="@drawable/log_out" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginEnd="@dimen/margin_16"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_green"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/logout_title_text" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!--<LinearLayout
+                        android:id="@+id/profile_go_to_orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/my_order" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginEnd="@dimen/margin_16"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:text="My Orders" />
+
+                    </LinearLayout>-->
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"/>
+
+                    <LinearLayout
+                        android:id="@+id/profile_go_to_zwallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_zwallet" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginEnd="@dimen/margin_16"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:text="Zwallet" />
+
+                    </LinearLayout>-->
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"/>
+
+                    <LinearLayout
+                        android:id="@+id/profile_go_to_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/address" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginEnd="@dimen/margin_16"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:text="Address" />
+
+                    </LinearLayout>-->
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"/>
+
+                    <LinearLayout
+                        android:id="@+id/profile_go_to_change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_key" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginEnd="@dimen/margin_16"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:text="Change Password" />
+
+                    </LinearLayout>-->
+
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"/>
+
+                    <LinearLayout
+                        android:id="@+id/profile_sign_out_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin_16"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/signout" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_16"
+                            android:layout_marginEnd="@dimen/margin_16"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:text="Sign Out" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_grey"/>-->
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/profile_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:animateLayoutChanges="true"
+            android:background="#33000000"
+            android:clickable="true"
+            android:visibility="gone"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_toolbar_mainLayout"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:background="@drawable/bottom_sheet_shape"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/profile_close_bottom_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            app:srcCompat="@drawable/ic_action_close" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/change_password_title_text" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true"
+            android:padding="@dimen/margin_4">
+
+            <EditText
+                android:id="@+id/profile_current_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticalight"
+                android:hint="@string/current_password_title_text"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/light_black"
+                android:padding="@dimen/margin_8" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true"
+            android:padding="@dimen/margin_4">
+
+            <EditText
+                android:id="@+id/profile_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticalight"
+                android:hint="@string/new_password_title_text"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/light_black"
+                android:padding="@dimen/margin_8" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/profile_submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="36dp"
+            android:background="@drawable/button_round_corner"
+            android:fontFamily="@font/helveticamedium"
+            android:padding="15dp"
+            android:text="@string/submit_title_text"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

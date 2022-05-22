@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activity.SelectTypeActivity">
+
+    <LinearLayout
+        android:id="@+id/select_type_toolbar_mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_select_type"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:theme="@style/AppTheme.NoActionBar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton_select_type_back"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_chevron_left_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/select_typeText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helveticalight"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Select Type"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <ru.nikartm.support.ImageBadgeView
+                        android:id="@+id/imageView_cart"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:ibv_badgeValue="0"
+                        app:ibv_badgeTextSize="9sp"
+                        app:ibv_fixedBadgeRadius="10dp"
+                        app:ibv_badgeTextStyle="bold"
+                        app:ibv_badgeTextColor="#ffffff"
+                        app:ibv_badgeColor="@color/red"
+                        app:ibv_badgeLimitValue="true"
+                        android:src="@drawable/ic_action_cart" />
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_type_toolbar_mainLayout">
+
+        <TextView
+            android:id="@+id/select_type_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/grid_view_text"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="#FFFFB700"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableStartCompat="@drawable/ic_list_grid" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/select_type_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingStart="@dimen/margin_16"
+            android:paddingEnd="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_16"
+            android:clipToPadding="true"
+            tools:listitem="@layout/list_big_select_type"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_type_txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

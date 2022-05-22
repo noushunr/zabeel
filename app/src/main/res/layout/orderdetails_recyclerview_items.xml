@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:background="@drawable/linearlayout_wishlist_back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/product1"
+                android:id="@+id/imageview_orderdetails"
+                />
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:id="@+id/text1_orderdetails"
+                    android:textColor="@color/light_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orange 1 KG"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/helveticamedium"/>
+
+
+                <TextView
+                    android:textSize="13sp"
+                    android:id="@+id/text2_orderdetails"
+                    android:textColor="@color/light_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="KD 25.00"
+                    android:fontFamily="@font/helveticamedium"/>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/quantity_textview"
+                    android:text="Qty:2"
+                    android:background="@drawable/background_search"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                   android:paddingTop="8dp"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

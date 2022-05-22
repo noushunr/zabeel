@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_contact"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar_clr"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <ImageButton
+                android:id="@+id/imageButton_back_contact"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_chevron_left_black_24dp" />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginEnd="45dp"
+                android:text="Contact US"
+                android:fontFamily="@font/helveticalight"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<include
+    android:layout_below="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/content_contactus_activity"/>
+</RelativeLayout>

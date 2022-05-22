@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/linear_otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/light_grey">
+
+                <TextView
+                    android:id="@+id/config_child_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/helveticaneubold"
+                    android:gravity="center"
+                    android:text="Choose option"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/close_three"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_back"
+                    android:gravity="center"
+                    android:text="X"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--<TextView
+                android:id="@+id/config_child_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/helveticalight"
+                android:text="Price : "
+                android:textColor="@color/black"
+                android:textSize="17sp" />-->
+
+            <LinearLayout
+                android:id="@+id/spinner_one_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spinner_one_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:text="Origin" />
+
+                <Spinner
+                    android:id="@+id/spinner_one"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownVerticalOffset="30dp"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spinner_two_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spinner_two_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:text="Origin" />
+
+                <Spinner
+                    android:id="@+id/spinner_two"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownVerticalOffset="30dp"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spinner_three_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spinner_three_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:text="Origin" />
+
+                <Spinner
+                    android:id="@+id/spinner_three"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownVerticalOffset="30dp"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spinner_four_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spinner_four_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:text="Origin" />
+
+                <Spinner
+                    android:id="@+id/spinner_four"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownVerticalOffset="30dp"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/spinner_five_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spinner_five_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/helveticamedium"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:text="Origin" />
+
+                <Spinner
+                    android:id="@+id/spinner_five"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/grey"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownVerticalOffset="30dp"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <!--<Spinner
+                android:id="@+id/spinner_one"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/grey"
+                android:dropDownWidth="match_parent"
+                android:dropDownVerticalOffset="30dp"
+                android:gravity="center"
+                android:nestedScrollingEnabled="true"
+                android:spinnerMode="dropdown" />-->
+
+            <!--<Spinner
+                android:id="@+id/spinner_two"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/grey"
+                android:dropDownWidth="match_parent"
+                android:dropDownVerticalOffset="30dp"
+                android:dropDownSelector="@color/grey"
+                android:gravity="center"
+                android:padding="10dp"
+                android:spinnerMode="dropdown" />-->
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:background="@drawable/box_green_border_green_background"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

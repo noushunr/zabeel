@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar_clr"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Wish List"
+                    android:fontFamily="@font/helveticalight"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <ru.nikartm.support.ImageBadgeView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView_wishlist_cart"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    app:ibv_badgeValue="0"
+                    app:ibv_badgeTextSize="9sp"
+                    app:ibv_fixedBadgeRadius="10dp"
+                    app:ibv_badgeTextStyle="bold"
+                    app:ibv_badgeTextColor="#ffffff"
+                    app:ibv_badgeColor="@color/red"
+                    app:ibv_badgeLimitValue="true"
+                    android:src="@drawable/ic_action_cart"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_whishlist_activity" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

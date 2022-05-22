@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="0dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/linearlayout_wishlist_back">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:src="@drawable/ic_action_delete" />-->
+
+            <ImageView
+                android:id="@+id/imageview_wishlist"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                tools:srcCompat="@drawable/product1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text1_wishlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneuethin"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:text="Orange 1 KG" />
+
+
+                <TextView
+                    android:id="@+id/text2_wishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/helveticaneuethin"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    tools:text="KD 25.00" />
+
+            </LinearLayout>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical">-->
+
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:id="@+id/add_to_cart_btn"
+                        android:text="add to cart"
+                        android:fontFamily="@font/helveticamedium"
+                        android:textSize="12sp"
+                        android:background="#FFFFFF"
+                        android:textColor="@color/red"
+                        android:textStyle="normal"
+                        android:textAllCaps="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+<!--                </LinearLayout>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

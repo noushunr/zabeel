@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Zebeel</string>
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="title_activity_home_activity" translatable="false">Home_activity</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_cart_activity" translatable="false">Cart_activity</string>
+    <string name="addmob_app_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="originpacking" translatable="false">Origin &amp; Packing</string>
+    <string name="url" translatable="false">http://zebeel.nuevoinformatica.com/rest/en/V1/categories/list?searchCriteria[pageSize]=20</string>
+
+
+    <string name="loading_title_text">Loading…</string>
+    <string name="fetching_products_title_text">Fetching Products</string>
+    <string name="categories_title_text">Categories</string>
+    <string name="fruits_title_text">FRUITS</string>
+    <string name="Vegetables_title_text">VEGETABLES</string>
+    <string name="leafy_vegetables_title_text">LEAFY VEGETABLES</string>
+    <string name="eggs_title_text">EGGS</string>
+    <string name="kuwait_gcc_title_text">KUWAIT &amp; GCC</string>
+    <string name="gas_delivery_title_text">GAS DELIVERY</string>
+    <string name="search_products_title_text">Search products</string>
+    <string name="list_view_title_text">List view</string>
+    <string name="no_items_available_title_text">No Items available</string>
+    <string name="select_type_title_text">Select Type</string>
+    <string name="home_title_text">Home</string>
+    <string name="profile_title_text">Profile</string>
+    <string name="wishlist_title_text">Wishlist</string>
+    <string name="order_history_title_text">Order History</string>
+    <string name="about_us_title_text">About Us</string>
+    <string name="share_title_text">Share</string>
+    <string name="help_title_text">Help</string>
+    <string name="signout_title_text">Signout</string>
+    <string name="logout_title_text">Logout</string>
+    <string name="are_you_sure_want_to_logout_title_text">Are you sure want to logout?</string>
+    <string name="cancel_title_text">Cancel</string>
+    <string name="ok_title_text">OK</string>
+    <string name="no_items_found_title_text">No Items found</string>
+    <string name="shopping_cart_title_text">Shopping Cart</string>
+    <string name="cart_subtotal_title_text">Cart subtotal</string>
+    <string name="place_order_now_title_text">Place Order Now</string>
+    <string name="my_orders_title_text">My orders</string>
+    <string name="zwallet_title_text">ZWallet</string>
+    <string name="addresses_title_text">Addresses</string>
+    <string name="change_password_title_text">Change Password</string>
+    <string name="change_language_title_text">Change Language</string>
+    <string name="no_orders_available_title_text">No orders available</string>
+    <string name="zwallet_balance_title_text">ZWallet balance</string>
+    <string name="add_amount_title_text">Add Amount</string>
+    <string name="proceed_title_text">Proceed</string>
+    <string name="no_addressess_found_title_text">No addresses found</string>
+    <string name="addresses_list_title_text">Addresses List</string>
+    <string name="first_name_title_text">First Name</string>
+    <string name="last_name_title_text">Last Name</string>
+    <string name="mobile_number_title_text">Mobile number</string>
+    <string name="area_title_text">Area</string>
+    <string name="block_title_text">Block</string>
+    <string name="street_title_text">Street</string>
+    <string name="building_number_title_text">Building Number</string>
+    <string name="floor_title_text">Floor</string>
+    <string name="apartment_number_title_text">Apartment Number</string>
+    <string name="comment_title_text">Comment</string>
+    <string name="company_title_text">Company</string>
+    <string name="submit_title_text">Submit</string>
+    <string name="current_password_title_text">Current Password</string>
+    <string name="new_password_title_text">New Password</string>
+    <string name="select_language_title_text">Select Language</string>
+    <string name="no_data_found_title_text">No data found</string>
+    <string name="cart_title_text">Cart</string>
+    <string name="wish_list_title">Wish List</string>
+    <string name="knet_Text">KNET</string>
+    <string name="cash_on_delivery_text">Cash on delivery</string>
+    <string name="coupon_code_text">Coupon code</string>
+    <string name="price_details_text">Price details</string>
+    <string name="price_text">Price</string>
+    <string name="delivery_charge_text">Delivery charge</string>
+    <string name="discount_text">Discount</string>
+    <string name="ammount_payble_text">Amount payable</string>
+    <string name="current_balance_text">Your current balance is</string>
+    <string name="pay_now_text">PAY NOW</string>
+    <string name="use_zwallet_text">use Zwallet</string>
+    <string name="success_text">Success</string>
+    <string name="total_price_text">Total price</string>
+    <string name="order_place_success_text">Your order has been placed successfully</string>
+    <string name="tax_text">Tax</string>
+    <string name="total_Paid_text">Total Paid</string>
+    <string name="continue_shopping_text">Continue shopping ></string>
+    <string name="continue_text">Continue</string>
+    <string name="canceled_text">canceled</string>
+    <string name="status_text">Status</string>
+    <string name="available_in_stock_text">Status</string>
+    <string name="list_view_text">List View</string>
+    <string name="grid_view_text">Grid View</string>
+    <string name="payment_text">Payment</string>
+    <string name="your_transaction_successfully_completed">Your transaction successfully completed</string>
+    <string name="host_not_reachable_text">Host not reachable</string>
+    <string name="registration_successfully_completed">Registration successfully completed</string>
+    <string name="username_is_empty">Username is empty</string>
+    <string name="password_is_empty">Password is empty</string>
+    <string name="user_details_not_found">User details not found.</string>
+    <string name="successfully_added_new_address">Successfully added New address</string>
+    <string name="enter_the_firstname">Enter the first name</string>
+    <string name="enter_the_lastname">Enter the last name</string>
+    <string name="enter_the_mobile_number">Enter the mobile number</string>
+    <string name="enter_the_street_address">Enter the street address</string>
+    <string name="enter_the_area">Enter  the area</string>
+    <string name="enter_the_block">Enter the block</string>
+    <string name="enter_the_floor">Enter the floor</string>
+    <string name="enter_the_apartment_number">Enter  the Apartment number</string>
+    <string name="enter_the_building_number">Enter  the Building number</string>
+    <string name="enter_the_region">Enter  the region</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="enter_the_passwords">Enter the passwords</string>
+    <string name="enter_the_current_password">Enter the current password</string>
+    <string name="enter_the_new_password">Enter the new password</string>
+    <string name="current_password_same">Current password and New password are same</string>
+    <string name="failed_update_password">Failed to update password</string>
+    <string name="failed_deleteaddress">Failed to delete address</string>
+    <string name="product_added_cart">Product added to cart</string>
+    <string name="failed_to_add_cart">Failed to  add to cart</string>
+    <string name="product_added_wish_list">Product added to wish list</string>
+    <string name="failed_add_wish_list">Failed to add to wish list</string>
+    <string name="failed_get_details_again">Failed to get details,try again</string>
+    <string name="no_items_found">No items found</string>
+    <string name="please_fill_all_fields">Please fill all fields</string>
+    <string name="failed_to_reorder">Failed to reorder</string>
+    <string name="enter_amount">Enter a amount</string>
+    <string name="select_your_payment_method">Select your payment method</string>
+    <string name="zwallet_successfully_applied">Zwallet successfully applied</string>
+    <string name="zwallet_successfully_cancelled">Zwallet successfully cancelled</string>
+    <string name="payment_failed">Payment failed</string>
+    <string name="billing_address">Billing address</string>
+    <string name="failed_get_produts">Failed get products</string>
+    <string name="fetch_products">Fetch products</string>
+    <string name="available_in_stock">Available In Stock</string>
+    <string name="not_available_stock">Not Available In Stock</string>
+    <string name="packing_text">Packing</string>
+    <string name="qty_txt">Qty</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="prompt_forgot_password">Forgot Password?</string>
+    <string name="order_again">Order Again</string>
+    <string name="confirm_order_details">Confirm Order Details</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="email">Email</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="zabeel_guest">Zebeel Guest</string>
+    <string name="or">OR</string>
+    <string name="kuwait_food_title">KUWAIT FOOD</string>
+    <string name="search">Search</string>
+    <string name="go">Go!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="zwallet">Zwallet</string>
+
+</resources>

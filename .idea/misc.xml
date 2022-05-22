@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/drawable-ar/navigation_drawer_box.xml" value="0.124" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/drawable/box_grey_border_grey.xml" value="0.124" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/drawable/box_quantity_square.xml" value="0.124" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/drawable/ic_tick_red.xml" value="0.124" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/drawable/linearlayout_payment_back.xml" value="0.124" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/drawable/navigation_drawer_box.xml" value="0.124" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_about_us.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_address.xml" value="0.2" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_addressdetails_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_cart_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_contact_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_home_activity.xml" value="0.2" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_language.xml" value="0.136" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_login_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_on_board.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_order_cancelled.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_orderdetails_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_orderplaced_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_orders_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_passwordchange_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_payment_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_product_detail_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_product_detail_activity2.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_select_type.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_share_app_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_signup_activity.xml" value="0.2" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_wallet.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/activity_wishlist_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/app_bar_cart_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/app_bar_home_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/app_bar_main_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/cart_card.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/content_cart1_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/content_cart_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/content_home_activity.xml" value="0.176" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/content_main_activity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/list_big_select_type.xml" value="0.2" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/list_item_autocomplete.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/list_order_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/list_orders.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/list_product_ads.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/list_small_select_type.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/navigation_items.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/pop_up_next_activity.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/popup_order_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/reorder_cart_card.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TILTLABS/Downloads/5_6170139838361109459/ZabeelDesign/app/src/main/res/layout/splash_slider.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

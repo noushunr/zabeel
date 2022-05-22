@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_heading"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/grey"
+            android:text="Eat Organic. "
+            android:fontFamily="@font/helveticamedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_heading_blue"
+            android:textColor="@color/txt_highlight"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Everyday"
+            android:fontFamily="@font/helveticamedium"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helveticamedium"
+        android:text="We are the suppliers of everyday groceries. With all faith on organic food"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/relative_detail_card"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardview_box"
+        android:layout_marginLeft="10dp">
+
+
+        <LinearLayout
+            android:background="@drawable/box_green_broder_white_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+<!--            <LinearLayout-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/inner_card_box"-->
+<!--                android:layout_gravity="right">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Cart_Similar_Prod"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/ic_action_cart"/>-->
+
+<!--            </LinearLayout>-->
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/product1"
+                android:id="@+id/imageView_similarProduct"
+                android:layout_marginTop="25dp"/>
+
+
+            <TextView android:textSize="16sp"
+                android:textColor="@color/light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:fontFamily="@font/helveticalight"
+                android:layout_marginTop="10dp"
+                android:text="Orange 1 kg"
+                android:id="@+id/TextView_SimilarPro_name"/>
+
+            <TextView android:textSize="12sp"
+                android:textColor="@color/text_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Avaliability : In Stock"
+                android:fontFamily="@font/helveticalight"
+                android:id="@+id/TextView_SimilarPro_Availability"/>
+
+
+            <TextView android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_black"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="KD 0.200"
+                android:fontFamily="@font/helveticalight"
+                android:id="@+id/TextView_SimilarProd_Price"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

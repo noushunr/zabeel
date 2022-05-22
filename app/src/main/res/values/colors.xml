@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="error_color_material">#f4511e</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorPrimary">#2fd602</color>
+    <color name="colorPrimaryDark">#00a306</color>
+
+
+
+
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+
+
+
+    <color name="txt_highlight">#15b7a2</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF9800</color>
+    <color name="green">#2fd602</color>
+    <color name="black">#000000</color>
+    <color name="grey">#7E7E7E</color>
+    <color name="light_grey">#37B5B5B5</color>
+
+    <color name="background_light_green">#8BC34A</color>
+    <color name="background_grey">#fafafa</color>
+    <color name="cart_button_background">#cedfab</color>
+    <color name="product_background1">#f6e0b9</color>
+    <color name="text_green">#5ea201</color>
+    <color name="light_black">#49413e</color>
+    <color name="product_bg_green">#cddeaa</color>
+    <color name="navigation_drawer_bg">#e7efd7</color>
+
+    <color name="toolbar_clr">#D6EDB8</color>
+<color name="dark_blue">#535289</color>
+</resources>
+
